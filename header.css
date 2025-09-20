@@ -1,0 +1,128 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+
+.headerhome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: auto;
+  gap: 60px;
+  background-color: #141414;
+}
+
+.stackshome {
+  color: #CAC6AD;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+
+.stackshome:hover {
+  color: #e40000;
+  transform: scale(1.2);
+}
+
+
+
+/*-------------RPVE----------------*/
+.header2 {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+
+.headerrpve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: auto;
+  gap: 60px;
+  background-color: #141414;
+}
+
+.stacksrpve {
+  color: #CAC6AD;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+
+.stacksrpve:hover {
+  color: #e40000;
+  transform: scale(1.2);
+}
+
+
+/*-------------Lores----------------*/
+
+.header3 {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+
+.headerlores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: auto;
+  gap: 60px;
+  background-color: #141414;
+}
+
+.stackslores {
+  color: #CAC6AD;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+
+.stackslores:hover {
+  color: #e40000;
+  transform: scale(1.2);
+}
+
+
+/*---------Personalização-----------*/
+.header4 {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+
+.headerpersonalizacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: auto;
+  gap: 60px;
+  background-color: #141414;
+}
+
+.stackspersonalizacao {
+  color: #CAC6AD;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
+}
+
+.stackspersoanlizacao:hover {
+  color: #e40000;
+  transform: scale(1.2);
+}
+

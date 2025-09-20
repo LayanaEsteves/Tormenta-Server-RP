@@ -1,0 +1,71 @@
+.rules {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(/assets/rpve/pergaminhos4.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rules-book {
+  display: none;
+}
+
+.image-rpve {
+  position: relative;       /* para o botão fechar */
+  width: 100%;              /* container acompanha a tela */
+  max-width: none;          /* remove limite máximo */
+  max-height: 90vh;         /* altura máxima visível */
+  overflow-y: scroll;       /* scroll vertical */
+  margin-top: 80px;
+
+  /* scroll invisível */
+  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+
+
+.image-rpve::-webkit-scrollbar {
+  display: none;            /* Chrome, Safari, Edge */
+}
+
+.image-rpve img {
+  width: 800px;           /* largura desejada */
+  height: auto;
+  display: block;
+  margin: 0 auto;          /* centraliza horizontalmente */
+  
+  
+}
+
+.rules-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+
+}
+
+.rules-close-btn:hover {
+  color: red;
+}
+
+
+.image-rpve.active {
+  display: block; /* aparece quando ativado */
+}
+
+.rules-open-btn {
+  padding: 210px 250px;
+  margin-top: 100px;
+  rotate: 155deg;
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  cursor: pointer;
+}

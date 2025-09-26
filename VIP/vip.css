@@ -1,0 +1,164 @@
+.bg-vip{
+    background-image: url(/assets/background3.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh; /* ocupa a tela toda, mas deixa crescer */
+    width: auto;
+}
+
+.bp-coins-titulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.container-bp-coins{
+    background-color: rgba(102, 0, 0, 0.801);
+    border-radius: 8px;
+    margin: 20px auto;/* separação entre blocos */
+    width: 650px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+
+}
+
+/* Ajustes de texto */
+.bp-coins p,
+.itens-avulsos p, 
+.pets-exile-extreme p,
+.pacotes-vip p{
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.bp-coins-titulo h1,
+.itens-avulsos-titulo h1, 
+.pets-titulo h1,
+.pacotes-vip-titulo h1{
+    color: wheat;
+    margin-bottom: 10px;
+}
+
+.linha-divisoria-vip {
+    color: white;
+    text-align: center;
+}
+
+.bp-coins{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+
+.linha-divisoria-vip{
+   color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.vip-catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* não força ficar centralizado */
+    min-height: 100vh;
+    margin: auto;
+    padding: 50px 0; /* dá respiro sem empurrar demais */
+}
+
+
+/*-----------------itens avulso---------------------*/
+
+.container-itens-avulsos{
+    background-color: rgba(102, 0, 0, 0.801);
+    border-radius: 8px;
+    margin: 20px auto;/* separação entre blocos */
+    width: 800px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.itens-avulsos-titulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.itens-avulsos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+
+/*------------Pets Exile Extreme---------------*/
+
+.container-pets-exile-extreme{
+    background-color: rgba(102, 0, 0, 0.801);
+    border-radius: 8px;
+    margin: 20px auto;/* separação entre blocos */
+    width: 800px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.pets-titulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.pets-exile-extreme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+
+/*-----------Pacotes vip----------------*/
+
+.pacotes-vip-titulo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+
+.container-pacotes-vip{
+    background-color: rgba(102, 0, 0, 0.801);
+    border-radius: 8px;
+    margin: 20px auto;/* separação entre blocos */
+    width: 750px;
+    padding-bottom: 30px;
+    padding-top: 15px;
+
+}
+
+.pacotes-vip{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+

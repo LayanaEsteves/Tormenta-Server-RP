@@ -1,7 +1,7 @@
 .flipbook {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url(/assets/bookshelf/livros2.png);
+  background-image: url(/assets/background3.png);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -12,24 +12,20 @@
 
 /*Botão de abrir o livro*/
 
-.buttonbook1{
-  height: 400px;
-  margin-bottom: 150px;
+.button-default{
+  display: flex;
+  flex-direction: row;
+  height: 430px;
   background-color: transparent;
 
 }
 
-.buttonbook2 {
-  height: 300px;
-  margin-bottom: 80px;
-  background-color: transparent;
+.button-default:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
-.buttonbook3 {
-  margin-right: 200px;
-  height: 400px;
-  margin-bottom: 150px;
-  background-color: transparent;
-}
+
+
 
 /* Container do livro (modal) */
 .book-container {
@@ -42,7 +38,7 @@
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 5000;
+  z-index: 2000;
 
   display: flex; /* flex interno para organizar conteúdo */
   flex-direction: column;

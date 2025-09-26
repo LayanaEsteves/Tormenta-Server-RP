@@ -1,128 +1,38 @@
-header {
+/*--------Header--------*/
+.header-default {
   position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 2000;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  background-color: transparent; /* padrão transparente */
 }
 
-.headerhome {
+.header-default.scrolled {
+  background-color: rgb(0, 0, 0); /* cor ao rolar */
+}
+
+.container-header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 60px;
   margin: auto;
   gap: 60px;
-  background-color: #141414;
 }
 
-.stackshome {
+.stacks {
   color: #CAC6AD;
   padding-left: 30px;
   padding-right: 30px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px !important;
+  cursor: pointer;
   transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
 }
 
-.stackshome:hover {
-  color: #e40000;
-  transform: scale(1.2);
+.stacks:hover {
+    color: #850000;
 }
 
-
-
-/*-------------RPVE----------------*/
-.header2 {
-  position: fixed;
-  width: 100%;
-  z-index: 2000;
-}
-
-.headerrpve {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  margin: auto;
-  gap: 60px;
-  background-color: #141414;
-}
-
-.stacksrpve {
-  color: #CAC6AD;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-decoration: none;
-  font-size: 20px;
-  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
-}
-
-.stacksrpve:hover {
-  color: #e40000;
-  transform: scale(1.2);
-}
-
-
-/*-------------Lores----------------*/
-
-.header3 {
-  position: fixed;
-  width: 100%;
-  z-index: 2000;
-}
-
-.headerlores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  margin: auto;
-  gap: 60px;
-  background-color: #141414;
-}
-
-.stackslores {
-  color: #CAC6AD;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-decoration: none;
-  font-size: 20px;
-  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
-}
-
-.stackslores:hover {
-  color: #e40000;
-  transform: scale(1.2);
-}
-
-
-/*---------Personalização-----------*/
-.header4 {
-  position: fixed;
-  width: 100%;
-  z-index: 2000;
-}
-
-.headerpersonalizacao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  margin: auto;
-  gap: 60px;
-  background-color: #141414;
-}
-
-.stackspersonalizacao {
-  color: #CAC6AD;
-  padding-left: 30px;
-  padding-right: 30px;
-  text-decoration: none;
-  font-size: 20px;
-  transition: transform 0.6s ease-in-out, color 0.6s ease-in-out;
-}
-
-.stackspersoanlizacao:hover {
-  color: #e40000;
-  transform: scale(1.2);
-}
 

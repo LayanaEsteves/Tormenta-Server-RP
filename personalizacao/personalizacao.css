@@ -1,0 +1,279 @@
+.bg-personalizacao{
+    background-image: url(/assets/background3.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.personalizacao{
+    display: flex;
+    flex-direction: column; /* importante para empurrar o footer para baixo */
+    min-height: 100vh;
+    flex: 1;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.personalizacao-classe {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas para 4 cartas por linha */
+    justify-content: center;
+    margin: auto;
+    gap: 10px; /* espaço entre as cartas */
+}
+
+.linha-divisoria2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.personalizacao-classe > div:first-child {
+    grid-column: 1 / 5; /* faz o 1º filho ocupar as 4 colunas */
+    text-align: center;
+}
+
+.card-classe-topo{
+    color: wheat;
+}
+
+.card-classe {
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animação suave */
+}
+
+.card-classe:hover {
+    transform: scale(1.3); /* aumenta a carta */
+    z-index: 10; /* coloca sobre as outras cartas */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* sombra para dar destaque */
+}
+
+.card-classe img {
+  width: 250px;    /* define largura da coluna esquerda */
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-conteudo {
+  display: flex;
+  flex-direction: column;  /* título em cima, texto embaixo */
+  justify-content: center;
+}
+
+.card-conteudo h2 {
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.card-conteudo p {
+  margin: 0;
+  color: white;
+}
+
+
+/*-------------PROFISSOES-------------*/
+
+.personalizacao-profissao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card-profissao-topo{
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.dominioefeudo{
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+    justify-content: center;
+    margin: auto;
+}
+
+.descricaodominioefeudo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 350px;
+  margin-top: 50px;
+}
+
+.descricaodominioefeudo h2{
+  font-size: 30px;
+}
+
+.descricaodominioefeudo p{
+  font-size: 20px;
+  color: white;
+}
+
+.container-card-profissao{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 100px;
+  gap: 15px;
+}
+
+.card-profissao button{
+  background: transparent;
+  border: none;
+}
+
+
+.card-profissao img{
+  height: 300px;
+}
+
+.card-profissao{
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animação suave */
+}
+
+.card-profissao:hover{
+  transform: scale(1.3); /* aumenta a carta */
+  z-index: 10; /* coloca sobre as outras cartas */
+
+}
+
+
+
+
+/*--------Conteudo sobre as profissões---------------*/
+
+/* Esconde o conteúdo por padrão */
+.card-conteudo2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Caixa central */
+.conteudo-box {
+  padding: 20px;
+  max-width: 2000px;
+  overflow-y: auto;
+  position: relative;
+  margin-top: 50px;
+}
+
+.conteudo-box img {
+  width: 500px;
+  height: auto;
+}
+
+/* Botão fechar */
+.btn-fechar-profissao {
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Quando ativo */
+.card-conteudo2.ativo {
+  display: flex;
+}
+
+.conteudo-box h2{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.conteudo-box p{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+
+/*----------raça--------------*/
+
+
+.personalizacao-raca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card-raca-topo{
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.descricao-raca {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.descricao-raca p {
+  flex: 1;
+  text-align: left;
+  max-width: 500px;
+  font-size: 25px;
+  color: white;
+}
+
+.descricao-raca ul {
+  flex: 1;
+  padding-left: 20px;
+  max-width: 500px;
+  font-size: 20px;
+  margin-top: 55px;
+}
+
+.listabuff li{
+  font-size: 20px;
+  margin: 10px;
+  color: white;
+}
+
+.linha-divisoria3 {
+  width: 2px;           /* espessura da linha */
+  rotate: 90deg;
+  color: white;
+}

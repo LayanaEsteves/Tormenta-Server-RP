@@ -1,15 +1,15 @@
 // Armazena a página atual de cada livro
 let currentPage = {
-    book1: 0,
-    book2: 0,
-    book3: 0
+    book1: 1,
+    book2: 1,
+    book3: 1
 };
 
-// Número total de páginas de cada livro (incluindo capa)
+// Número total de páginas de cada livro
 const totalPages = {
-    book1: 4, // capa + 3 páginas
-    book2: 4,
-    book3: 4
+    book1: 3, // agora só tem páginas (sem capa)
+    book2: 3,
+    book3: 3
 };
 
 // Função para abrir o livro clicado
@@ -22,8 +22,8 @@ function openBook(bookId) {
     const book = document.getElementById(bookId);
     book.style.display = 'block';
 
-    // Começa na capa
-    currentPage[bookId] = 0;
+    // Começa na página 1
+    currentPage[bookId] = 1;
     updateBookContent(bookId);
 }
 
@@ -35,23 +35,24 @@ function closeBook(bookId) {
 
 // Atualiza a página visível do livro
 function updateBookContent(bookId) {
-    for (let i = 0; i < totalPages[bookId]; i++) {
+    for (let i = 1; i <= totalPages[bookId]; i++) {
         const page = document.getElementById(`${bookId}-page${i}`);
-        page.style.display = i === currentPage[bookId] ? 'flex' : 'none';
+        if (page) {
+            page.style.display = i === currentPage[bookId] ? 'flex' : 'none';
+        }
     }
 
     const container = document.getElementById(bookId);
     const prevBtn = container.querySelector('.prev-btn');
     const nextBtn = container.querySelector('.next-btn');
 
-    if(prevBtn) prevBtn.style.display = currentPage[bookId] === 0 ? 'none' : 'block';
-    if(nextBtn) nextBtn.style.display = currentPage[bookId] === totalPages[bookId] - 1 ? 'none' : 'block';
+    if (prevBtn) prevBtn.style.display = currentPage[bookId] === 1 ? 'none' : 'block';
+    if (nextBtn) nextBtn.style.display = currentPage[bookId] === totalPages[bookId] ? 'none' : 'block';
 }
-
 
 // Função para avançar página
 function nextPage(bookId) {
-    if (currentPage[bookId] < totalPages[bookId] - 1) {
+    if (currentPage[bookId] < totalPages[bookId]) {
         currentPage[bookId]++;
         updateBookContent(bookId);
     }
@@ -59,7 +60,7 @@ function nextPage(bookId) {
 
 // Função para voltar página
 function prevPage(bookId) {
-    if (currentPage[bookId] > 0) {
+    if (currentPage[bookId] > 1) {
         currentPage[bookId]--;
         updateBookContent(bookId);
     }

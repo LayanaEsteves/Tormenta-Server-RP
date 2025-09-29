@@ -4,9 +4,9 @@
     background-attachment: fixed;
 }
 
-.personalizacao{
+.personalizacao {
     display: flex;
-    flex-direction: column; /* importante para empurrar o footer para baixo */
+    flex-direction: column; 
     min-height: 100vh;
     flex: 1;
     padding-top: 150px;
@@ -15,10 +15,9 @@
 
 .personalizacao-classe {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas para 4 cartas por linha */
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas por linha */
     justify-content: center;
     margin: auto;
-    gap: 10px; /* espaço entre as cartas */
 }
 
 .linha-divisoria2 {
@@ -30,37 +29,49 @@
 }
 
 .personalizacao-classe > div:first-child {
-    grid-column: 1 / 5; /* faz o 1º filho ocupar as 4 colunas */
+    grid-column: 1 / -1; /* título ocupa toda a linha */
     text-align: center;
 }
 
-.card-classe-topo{
+.card-classe-topo {
     color: wheat;
+    margin-bottom: 30px;
 }
 
 .card-classe {
-    height: 350px;
-    width: 100%;
-    border-radius: 10px;
-
     display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
     align-items: center;
     gap: 15px;
     padding: 15px;
+    border-radius: 10px;
+    transition: transform 1.0s ease; /* animação na div */
+}
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animação suave */
+.card-classe p {
+  color: white;
+  font-size: 30px;
 }
 
 .card-classe:hover {
-    transform: scale(1.3); /* aumenta a carta */
-    z-index: 10; /* coloca sobre as outras cartas */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* sombra para dar destaque */
+    transform: scale(1.50); /* leve aumento da div */
+    z-index: 10;
 }
 
 .card-classe img {
-  width: 250px;    /* define largura da coluna esquerda */
-  height: auto;
-  border-radius: 8px;
+    width: 250px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative; /* necessário para o JS */
+    z-index: 1;
+}
+
+.personalizacao-classe > .card-classe:last-child {
+    grid-column: 1 / -1;       /* ocupa a linha toda */
+    justify-content: center;   /* centraliza o conteúdo dentro dela */
+    display: flex;             /* garante alinhamento flex */
 }
 
 .card-conteudo {

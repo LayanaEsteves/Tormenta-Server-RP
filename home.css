@@ -20,14 +20,34 @@
 .coluna {
   flex: 1;                
   text-align: center;
-  padding: 30px 0 70px 0;
+  padding: 30px 0 20px 0;
 }
 
-.h1home {
-  color: #dd0101;
-  font-size: 70px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+.coluna img {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 600px;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+/*Pulse*/
+
+.pulsando {
+  animation: pulse 5.0s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
   
@@ -46,11 +66,14 @@
     text-decoration: none;
     border-radius: 8px;
     margin: 25px auto;
+
+    transition: transform 0.5s ease;
 }
 
 .discordlink a {
     text-decoration: none;
     color: #bb0000;
+
     
 }
 

@@ -3,70 +3,81 @@
   font-family: Arial, sans-serif;
   background-image: url(/assets/background3.png);
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-attachment: fixed;
-  height: 100vh;
 }
 
-.rules-book {
-  display: none;
+.rules-container{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 100vh;
+  flex: 1;
+  padding-top: 150px;
+
+  max-width: 1000px;
+  margin: auto;
 }
 
-.image-rpve {
-  position: relative;       /* para o botão fechar */
-  width: 100%;              /* container acompanha a tela */
-  max-width: none;          /* remove limite máximo */
-  max-height: 90vh;         /* altura máxima visível */
-  overflow-y: scroll;       /* scroll vertical */
-  margin-top: 80px;
-
-  /* scroll invisível */
-  scrollbar-width: none;    /* Firefox */
-  -ms-overflow-style: none; /* IE */
+.conteudo-rules-topo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -50px;
 }
 
-
-.image-rpve::-webkit-scrollbar {
-  display: none;            /* Chrome, Safari, Edge */
+.conteudo-rules-topo h1 {
+  color: wheat;
+  font-size: 40px;
 }
 
-.image-rpve img {
-  width: 800px;           /* largura desejada */
-  height: auto;
-  display: block;
-  margin: 0 auto;          /* centraliza horizontalmente */
-  
-  
+.introducao-rules{
+  color: white;
+}
+.introducao-rules{
+  text-align: justify;
+  font-size: 18px;
 }
 
-.rules-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 10;
-  border: none;
-  background-color: transparent;
-  font-size: 25px;
-
+.introducao-rules h3{
+  width: 900px;;
 }
 
-.rules-close-btn:hover {
-  color: red;
+.color-red-rules{
+  color: rgb(221, 0, 0);
 }
 
-
-.image-rpve.active {
-  display: block; /* aparece quando ativado */
+.color-yellow-rules{
+  color: yellow;
 }
 
-.rules-open-btn {
-  padding: 210px 250px;
+.titulo-manual-do-jogador{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: wheat;
+  margin-bottom: -80px;
+}
+.titulo-manual-do-jogador h2{
   margin-top: 100px;
-  rotate: 155deg;
-  border: none;
-  background-color: transparent;
-  position: fixed;
-  cursor: pointer;
+  font-size: 30px;
+}.titulo-manual-do-jogador p {
+  text-align: justify;
+}
+
+.background-rules{
+  background-color: rgba(63, 0, 0, 0.601);
+  border-radius: 8px;
+  margin: 20px auto;/* separação entre blocos */
+  width: 1000px;
+  padding: 40px 40px 40px 40px;
+}
+
+.conteudo-manual-do-jogador {
+ 
+}
+
+.conteudo-manual-do-jogador p {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
 }

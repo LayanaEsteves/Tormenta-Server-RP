@@ -7,9 +7,9 @@ let currentPage = {
 
 // Número total de páginas de cada livro
 const totalPages = {
-    book1: 3, // agora só tem páginas (sem capa)
-    book2: 3,
-    book3: 3
+    book1: 25, // agora só tem páginas (sem capa)
+    book2: 7,
+    book3: 7
 };
 
 // Função para abrir o livro clicado

@@ -1,0 +1,78 @@
+/* Container geral */
+.galeria-container {
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(/assets/background3.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/* Grid de imagens */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* mínimo de 4 colunas */
+  gap: 10px;                             /* espaço entre imagens */
+  justify-items: center;     
+  padding-top: 100px;             /* centraliza imagens dentro da coluna */
+  padding-bottom: 50px;
+}
+
+/* Imagens do mural */
+.galeria img {
+  width: 250px;        /* ocupa toda a largura da coluna */
+     /* limita o tamanho máximo */
+  height: auto;       /* mantém proporção original */
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: contain; /* mantém a proporção da imagem */
+}
+
+/* Hover só quando o modal não estiver aberto */
+body:not(.modal-open) .galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 35px;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+  overflow: auto;
+}
+
+/* Imagem ampliada no modal */
+.modal-content {
+  display: inline-block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* mantém proporção */
+  border-radius: 6px;
+}
+
+/* Botão de fechar */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #ccc;
+}

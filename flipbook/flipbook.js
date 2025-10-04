@@ -7,7 +7,7 @@ let currentPage = {
 
 // Número total de páginas de cada livro
 const totalPages = {
-    book1: 25, // agora só tem páginas (sem capa)
+    book1: 27, // agora só tem páginas (sem capa)
     book2: 7,
     book3: 7
 };

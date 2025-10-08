@@ -20,6 +20,7 @@
     margin: auto;
 }
 
+
 .linha-divisoria2 {
     color: white;
     display: flex;
@@ -43,19 +44,23 @@
     flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
     padding: 15px;
     border-radius: 10px;
     transition: transform 1.0s ease; /* animação na div */
 }
 
-.card-classe p {
+.card-classe-topo h1{
+  font-size: 40px;
+  color: wheat;
+}
+
+.card-classe-topo p {
   color: white;
-  font-size: 30px;
 }
 
 .card-classe:hover {
-    transform: scale(1.50); /* leve aumento da div */
+    transform: scale(1.25); /* leve aumento da div */
     z-index: 10;
 }
 
@@ -91,6 +96,77 @@
 }
 
 
+/*-----------------dominio e feudo-----------------*/
+
+.container-dominiofeudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente */
+  min-height: 100vh; /* ocupa altura total da tela */
+  margin: 0 auto;
+}
+
+.card-dominiofeudo-topo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.card-dominiofeudo-topo h1{
+  font-size: 40px;
+  color: wheat;
+}
+
+.card-dominiofeudo-topo p {
+  color: white;
+}
+
+.dominioefeudo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.descricaodominioefeudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 355px;
+  margin-top: 50px;
+  border: solid 1px #86000088;
+  background-color: rgba(63, 0, 0, 0.601);
+  border-radius: 8px;
+  padding: 30px 20px 30px 20px;
+}
+
+.descricaodominioefeudo h2 {
+  font-size: 30px;
+}
+
+.descricaodominioefeudo p {
+  font-size: 20px;
+  color: white;
+}
+
+.explicacaodominioefeudo{
+  color: white;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.explicacaodominioefeudo p {
+  text-align: center;
+}
+.corvermelha{
+  color: rgb(221, 0, 0);
+}
+
+
 /*-------------PROFISSOES-------------*/
 
 .personalizacao-profissao{
@@ -98,11 +174,10 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 5px;
 }
 
 .card-profissao-topo{
-    color: wheat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,28 +185,12 @@
     margin-bottom: 30px;
 }
 
-.dominioefeudo{
-    display: grid;  
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 15px;
-    justify-content: center;
-    margin: auto;
+.card-profissao-topo h1 {
+  font-size: 40px;
+  color: wheat;
 }
 
-.descricaodominioefeudo{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 350px;
-  margin-top: 50px;
-}
-
-.descricaodominioefeudo h2{
-  font-size: 30px;
-}
-
-.descricaodominioefeudo p{
-  font-size: 20px;
+.card-profissao-topo {
   color: white;
 }
 
@@ -243,7 +302,7 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .card-raca-topo{
@@ -255,6 +314,22 @@
     margin-bottom: 30px;
 }
 
+.card-raca-topo h1{
+  font-size: 40px;
+  color: wheat;
+}
+
+.card-raca-topo p {
+  color: white;
+}
+
+.background-raca{
+  background-color: rgba(63, 0, 0, 0.601);
+  border: solid 1px #86000088;
+  border-radius: 8px;
+  padding: 0 15px 25px 35px;
+}
+
 .descricao-raca {
   display: flex;
   align-items: flex-start;
@@ -263,10 +338,12 @@
 
 .descricao-raca p {
   flex: 1;
-  text-align: left;
+  text-align: justify;
   max-width: 500px;
   font-size: 25px;
   color: white;
+  margin-top: 30px;
+  margin-right: 20px;
 }
 
 .descricao-raca ul {
@@ -274,7 +351,7 @@
   padding-left: 20px;
   max-width: 500px;
   font-size: 20px;
-  margin-top: 55px;
+  margin-top: 85px;
 }
 
 .listabuff li{
@@ -287,4 +364,5 @@
   width: 2px;           /* espessura da linha */
   rotate: 90deg;
   color: white;
+  margin-top: 25px;
 }

@@ -16,6 +16,7 @@
 
 
 .container-bp-coins{
+    border: solid 1px #86000088;
     background-color: rgba(63, 0, 0, 0.601);
     border-radius: 8px;
     margin: 20px auto;/* separação entre blocos */
@@ -79,6 +80,7 @@
 /*-----------------itens avulso---------------------*/
 
 .container-itens-avulsos{
+    border: solid 1px #86000088;
     background-color: rgba(63, 0, 0, 0.601);
     border-radius: 8px;
     margin: 20px auto;/* separação entre blocos */
@@ -108,6 +110,7 @@
 /*------------Pets Exile Extreme---------------*/
 
 .container-pets-exile-extreme{
+    border: solid 1px #86000088;
     background-color: rgba(63, 0, 0, 0.601);
     border-radius: 8px;
     margin: 20px auto;/* separação entre blocos */
@@ -145,6 +148,7 @@
 
 
 .container-pacotes-vip{
+    border: solid 1px #86000088;
     background-color: rgba(63, 0, 0, 0.601);
     border-radius: 8px;
     margin: 20px auto;/* separação entre blocos */

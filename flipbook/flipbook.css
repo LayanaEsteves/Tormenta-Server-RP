@@ -11,6 +11,11 @@
   gap: 45px;
 }
 
+.container-livros-lore{
+  display: flex;
+  gap: 15px;
+}
+
 /*Botão de abrir o livro*/
 
 .button-default{
@@ -63,6 +68,8 @@
   box-sizing: border-box;
 }
 
+
+
 /* wrapper que envolve cada imagem */
 .image-wrapper {
   position: relative; /* referência para os botões */
@@ -81,8 +88,8 @@
   width: 50px;
   height: 50px;
   font-size: 50px;
-  background: #ffffff;
-  color: white;
+  background-color: rgba(63, 0, 0, 0.601);
+  color: white !important;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -109,38 +116,11 @@
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
+  background-color: rgba(63, 0, 0, 0.601);
+  color: white !important;
 }
 
-/* Botões de navegação e fechar capa */
-.nav-btn0 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  font-size: 50px;
-  background: #ffffff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.next-btn0 {
-right: -55px;
-bottom: 0px;
-}
-
-.close-btn0 {
-  position: absolute;
-  top: 0px;
-  right: -50px;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-}
 
 /* Botão do livro na prateleira */
 .flipbook button {

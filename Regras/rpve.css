@@ -12,6 +12,7 @@
   min-height: 100vh;
   flex: 1;
   padding-top: 150px;
+  padding-bottom: 50px;
 
   max-width: 1000px;
   margin: auto;
@@ -64,6 +65,7 @@
 }
 
 .background-rules{
+  border: solid 1px #86000088;
   background-color: rgba(63, 0, 0, 0.601);
   border-radius: 8px;
   margin: 20px auto;/* separação entre blocos */
@@ -71,12 +73,13 @@
   padding: 40px 40px 40px 40px;
 }
 
-.conteudo-manual-do-jogador {
- 
-}
 
 .conteudo-manual-do-jogador p {
   color: white;
   text-align: justify;
   font-size: 20px;
+}
+
+.linha-divisoria{
+  color: white;
 }

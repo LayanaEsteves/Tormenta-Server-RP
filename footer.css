@@ -1,10 +1,41 @@
 .footer {
    display: flex;
+   flex-direction: column;
+   gap: 5px;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 70px;
   font-size: 15px;
   background-color: #000000;
   color: #CAC6AD;
   z-index: 2000;
+  position: relative;
+}
+
+
+.discord-link-fixed{
+   display: flex;
+   font-size: 50px;
+   z-index: 9999;
+   color: white;
+   background-color: transparent;
+   border: none;
+   
+   /* posição fixa correta */
+   position: fixed;
+   bottom: 80px;  /* distância da borda inferior da tela */
+   right: 10px;   /* distância da borda direita da tela */
+   
+   transition: transform 0.3s ease, background-color 0.3s ease;
+   cursor: pointer;
+}
+
+.discord-link-fixed img {
+    height: 60px;
+    width: auto;
+    color: white;
+}
+
+.discord-link-fixed:hover {
+  transform: scale(1.1); /* aumenta 10% ao passar o mouse */
 }

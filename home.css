@@ -65,16 +65,14 @@
     background-color: #fffef8;
     text-decoration: none;
     border-radius: 8px;
-    margin: 25px auto;
+    margin: 30px auto;
 
     transition: transform 0.5s ease;
 }
 
 .discordlink a {
     text-decoration: none;
-    color: #bb0000;
-
-    
+    color: #bb0000;    
 }
 
 .discordlink:hover {
@@ -88,33 +86,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 80px;
 }
-
-
 
 
 
 
 .coluna2 {
   display: flex;                 /* organiza horizontalmente */
-  align-items: center;           /* centraliza verticalmente */
-  justify-content: space-between;/* espaço entre texto e imagem */
-  gap: 40px;                     /* distância entre as divs */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;                     /* distância entre as divs */
   max-width: 1000px;             /* largura máxima do bloco */
-  margin: 0 auto 100px auto;     /* centraliza e margem inferior */
-  flex-wrap: wrap;               /* permite quebrar em telas pequenas */
+  margin: auto;
+  margin-bottom: 100px;
 }
 
 .containergalery1 {
-  flex: 1;                        /* ocupa o espaço disponível */
+
   max-width: 800px;               /* evita ficar muito pequeno */
+
 }
 
 .containergalery1 h2 {
   color: #ffffff;
-  font-size: 30px;
-  line-height: 1.4;
+  font-size: 25px;
 }
 
 .containergalery2 {
@@ -143,7 +140,9 @@
 .img-button:hover img {
   transform: scale(1.05);          /* aumenta levemente no hover */
   box-shadow: 0 6px 12px rgba(0,0,0,0.5);
-  border: 2px solid #850000;
+  border: solid 1px #86000088;
   cursor: pointer;
 }
+
+
 

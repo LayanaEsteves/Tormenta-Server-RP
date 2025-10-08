@@ -1,0 +1,110 @@
+.junte-se {
+  margin: 0;
+  background-image: url(../assets/background3.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.junte-se-container{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 160px;
+  margin: auto; 
+}
+
+.container-background-junte-se{
+  border: solid 1px #3c0000;
+  background-color: rgba(12, 0, 0, 0.801);
+  border-radius: 15px;
+  align-items: center;
+  width: 600px;
+  height: auto;
+
+
+  /* sombra degradê mais forte */
+  box-shadow: 
+    0 4px 10px rgba(0,0,0,0.3),
+    0 10px 20px rgba(0,0,0,0.4),
+    0 20px 40px rgba(0,0,0,0.5),
+    0 30px 60px rgba(0,0,0,0.6);
+}
+
+.conteudo-junte-se {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.conteudo-junte-se img{
+  width: 350px;
+  margin-top: 30px;
+}
+
+.texto-junte-se{
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 500px;
+}
+
+.texto-junte-se p{
+  color: rgb(226, 226, 226);
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+
+.aventura-discord{
+  display: flex;
+  justify-content: center;
+}
+
+.aventura-discord a {
+  display: inline-block;
+  background-color: rgb(99, 0, 0);
+  border: solid 1px #850000;
+  padding: 12px 45px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  /* Efeitos suaves */
+  box-shadow: 0 0 15px rgba(133, 0, 0, 0.4);
+  transition: 
+    background-color 0.4s ease,
+    color 0.4s ease,
+    transform 0.3s ease,
+    box-shadow 0.4s ease;
+}
+
+.aventura-discord a:hover {
+  color: #fff8e7;
+  background-color: #850000;
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 100, 100, 0.6), 0 0 50px rgba(255, 50, 50, 0.3);
+}
+
+/* (Opcional) brilho pulsante contínuo — mágico ✨ */
+@keyframes pulsar {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(133, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 60, 60, 0.7);
+  }
+}
+
+.aventura-discord a {
+  animation: pulsar 2s infinite alternate;
+}

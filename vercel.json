@@ -1,28 +1,11 @@
 {
   "rewrites": [
-    {
-      "source": "/tormenta-rp",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/regras",
-      "destination": "/Regras/rpve.html"
-    },
-    {
-      "source": "/livros",
-      "destination": "/flipbook/flipbook.html"
-    },
-    {
-      "source": "/personalizacao",
-      "destination": "/personalizacao/personalizacao.html"
-    },
-    {
-      "source": "/vip",
-      "destination": "/VIP/vip.html"
-    },
-    {
-      "source": "/junte-se",
-      "destination": "/junte-se/junte-se.html"
-    }
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/tormenta-rp", "destination": "/index.html" },
+    { "source": "/regras", "destination": "/Regras/rpve.html" },
+    { "source": "/livros", "destination": "/flipbook/flipbook.html" },
+    { "source": "/personalizacao", "destination": "/personalizacao/personalizacao.html" },
+    { "source": "/vip", "destination": "/VIP/vip.html" },
+    { "source": "/junte-se", "destination": "/junte-se/junte-se.html" }
   ]
 }
